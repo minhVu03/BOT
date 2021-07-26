@@ -28,6 +28,9 @@ async def on_message(message):
             "My name is Carrota and I am a bot <3"
         )
 
+    if 'simp' in message.content:
+      await message.channel.send('A friendly reminder to stop simping. We do not condone this behaviour :3')
+
 #Run the client on the server (channel id: right click on channel)
 keep_alive()
 TOKEN = os.environ.get("DISCORD_BOT_SECRET")
