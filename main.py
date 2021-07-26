@@ -6,12 +6,12 @@ import os
 #client (our bot)
 client = discord.Client()
 
-@client.event
-async def on_ready():
+#@client.event
+#async def on_ready():
     # DO STUFF...
-    general_channel = client.get_channel(841365211944714324)
+    #general_channel = client.get_channel(841365211944714324)
     #wait to find the channel, then send a message when the bot comes online
-    await general_channel.send("Carrota hath cometh aliveth!!")
+    #await general_channel.send("Carrota hath cometh aliveth!!")
 
 @client.event
 async def on_message(message):
@@ -32,7 +32,7 @@ async def on_message(message):
     ################### COMMANDS #########################
     if message.content == '$info':
       await message.channel.send(
-          "My name is Carrota version 1.0 and I am a bot <3"
+          "My name is Carrota version 1.0 and I am a bot <3\nI shall only ever obey Minh and noone else >:)"
       )
     if message.content == '$simp':
       await message.channel.send(
