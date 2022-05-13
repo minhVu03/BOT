@@ -7,7 +7,7 @@ Responds to messages: ping, meow
 Responds to messages containing: food, sad  
 
 
-Commands list ($commands to display all commands): 
+Commands list ($commands to display all commands):  
 $info  
 $thunder  
 $selfdestruct  
