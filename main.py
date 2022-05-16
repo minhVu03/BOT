@@ -52,7 +52,7 @@ async def on_message(message):
     #Show list of commands
     if message.content == '$commands':
       await message.channel.send(
-        '```$info \n$thunder \n$technosimp \n$selfdestruct \n$SOS \n$emotionalSupport \n$insomnia```'
+        '```$info \n$thunder \n$selfdestruct \n$SOS \n$emotionalSupport \n$insomnia```'
       )
 
     ################### COMMANDS #########################
@@ -64,10 +64,6 @@ async def on_message(message):
     if message.content == '$thunder':
       await message.channel.send(file=discord.File('zenitsu.gif'))
 
-    if message.content == '$technosimp':
-      #await message.channel.send(file=discord.File('minhanh.jpeg'))
-      await message.channel.send('```Definitely Minh Anh```')
-
 		#emotional support
     if message.content == '$emotionalSupport':
       await message.channel.send('Carrota wants you to know that everything will be ok. Just pretend like nothing is on fire right now.')
@@ -76,6 +72,7 @@ async def on_message(message):
     if message.content == '$insomnia':
       await message.channel.send('pff who needs sleep anyway, what a waste of time .-.')
 
+		#selfdestruct
     if message.content == '$selfdestruct':
       await message.channel.send('Warning: This action is destructive and cannot be reversed. **Confirm** self-destruct, or **Cancel**')
       def check(msg):
@@ -97,6 +94,7 @@ async def on_message(message):
       elif msg.content.lower() == "cancel":
         await message.channel.send("Self-destruct cancelled")
 
+		#SOS
     if message.content.lower() == '$sos':
       await message.channel.send("Yikess. There's a rope that can save you! **Climb** it or **Perish**!")
       # This will make sure that the response will only be registered if the following
